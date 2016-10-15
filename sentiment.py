@@ -12,7 +12,7 @@ def get_api_access():
         api: authenticated twitter api accessor object
     """
     consumer_key = access_api.consumer_key
-    consuimer_secret = access_api.consuimer_secret
+    consuimer_secret = access_api.consumer_secret
 
     access_token = access_api.access_token
     access_token_secret = access_api.access_token_secret
