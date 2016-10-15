@@ -2,6 +2,7 @@ import tweepy
 from textblob import TextBlob
 import csv
 #custom file to store api keys secretly and off the public repository
+#the file only has 4 python variables containing the keys
 import access_api
 
 def get_api_access():
@@ -57,7 +58,7 @@ def make_csv(api, topic):
 
 def main():
     api = get_api_access()
-    # check_classifier(api,'XKCD')
+    check_classifier(api,'XKCD')
     make_csv(api, 'XKCD')
 
 if __name__ == '__main__':
